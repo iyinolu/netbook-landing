@@ -8,7 +8,7 @@ export const HeroPage = styled.section`
 `;
 export const Main = styled.div`
   display: flex;
-  width: 1170px;
+  max-width: 1170px;
   margin: 72px auto 0 auto;
   align-items: center;
   div {

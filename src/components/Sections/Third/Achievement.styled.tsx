@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ButtonFilled } from "../../Resuables/Button";
 
 export const CardsDisplayContainer = styled.div`
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto 140px auto;
   display: flex;
   height: 490px;

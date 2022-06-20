@@ -6,11 +6,15 @@ export const GlobalStyles = createGlobalStyle`
         --secondary-blue: #e7f2fe;
 
         --primary-dark-blue: #0A093D;
+        --secondary-dark-blue: #20202D;
 
         --text-light-gray: #8C8C8C;
+        --text-white: #E7E7E7;
 
         --paragraph-color-1: #656464;
         --paragraph-color-hover-1: #2B2B39;
+
+        --footer-bg-color-1: #2B2B39;
     }
     html, body, ul {
         margin: 0;

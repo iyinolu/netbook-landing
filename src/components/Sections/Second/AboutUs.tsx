@@ -2,7 +2,7 @@ import styled from "styled-components";
 import ListPointer from "../../../images/list-pointer.svg";
 
 export const SecondSectionContainer = styled.section`
-  width: 1170px;
+  max-width: 1170px;
   margin: 72px auto 0 auto;
 `;
 

@@ -1,7 +1,5 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+  ![netbook-logo](https://user-images.githubusercontent.com/47259302/175406807-854fea18-b432-4f75-b2b5-a292224700ed.svg)
 </p>
 <h1 align="center">
   Netbook Social Network

@@ -14,6 +14,8 @@ export const GlobalStyles = createGlobalStyle`
         --paragraph-color-1: #656464;
         --paragraph-color-hover-1: #2B2B39;
 
+        --app-download-section-bg: #E5F0FD;
+
         --footer-bg-color-1: #2B2B39;
     }
     html, body, ul {

@@ -72,9 +72,10 @@ export const SubscribeInputField = styled.div`
   justify-content: space-between;
   button {
     background: white;
-    border-radius: 12px;
+    border-radius: 11px;
     border-width: 0;
     width: 128px;
+    margin: 0;
     cursor: pointer;
   }
   input {

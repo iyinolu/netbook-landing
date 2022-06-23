@@ -6,6 +6,7 @@ import SecondSection from "../components/Sections/Second";
 import Achievement from "../components/Sections/Third";
 import Footer from "../components/Sections/Footer";
 import Community from "../components/Sections/Community";
+import StoreDownload from "../components/Sections/StoreDownload";
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
       <SecondSection />
       <Achievement />
       <Community />
+      <StoreDownload />
       <Footer />
     </React.Fragment>
   );

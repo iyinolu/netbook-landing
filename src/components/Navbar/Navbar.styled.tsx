@@ -17,6 +17,7 @@ export const NavBarInnerDiv = styled.div`
     div {
         :first-child {
             display: flex;
+            gap: 72px;
         }
     }
 `

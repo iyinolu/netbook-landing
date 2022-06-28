@@ -41,4 +41,7 @@ export const GlobalStyles = createGlobalStyle`
     p {
         margin: 0;
     }
+    section {
+        position: relative;
+    }
 `

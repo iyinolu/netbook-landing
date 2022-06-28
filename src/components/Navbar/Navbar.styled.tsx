@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const NavBar = styled.nav`
-    width: 1170px;
+    max-width: 1147px;
     margin: 0 auto;
     height: 90px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid var(--secondary-blue);
+    padding: 0 23px 0 23px;
 `
 export const NavBarInnerDiv = styled.div`
     flex: 1;
@@ -22,7 +23,7 @@ export const NavBarInnerDiv = styled.div`
     }
 `
 export const NavLinks = styled.ul`
-    display: flex;
+    display: none;
     align-items: center;
     width: 306px;
     justify-content: space-between;

@@ -1,22 +1,26 @@
 import styled from "styled-components";
 
 export const FooterNavSection = styled.div`
-  height: 389px;
+  min-height: 389px;
   display: flex;
   background-color: var(--footer-bg-color-1);
   align-items: center;
+  padding: 40px 0;
 `;
 
 export const FooterNavContainer = styled.div`
   display: flex;
-  max-width: 1170px;
+  max-width: 1147px;
   margin: 0 auto 0 auto;
   flex: 1;
+  padding: 0 23px 0 23px;
+  flex-direction: column;
 `;
 
 export const FooterNav = styled.nav`
-  display: flex;
-  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px 6px;
 `;
 export const FooterNavColumns = styled.div`
   display: flex;
@@ -27,7 +31,7 @@ export const FooterNavColumns = styled.div`
       font-size: 20px;
       font-weight: 400;
       color: var(--text-white);
-      margin-bottom: 22px;
+      margin-bottom: 11px;
     }
   }
   ul {
@@ -50,7 +54,10 @@ export const SubscriptionContainer = styled.div`
   flex: 1;
   color: var(--text-white);
   justify-content: space-between;
+  margin-top: 38px;
+
   h3 {
+    margin-bottom: 20px;
     font-size: 20px;
     font-weight: 400;
     width: 174px;
@@ -60,6 +67,7 @@ export const SubscriptionContainer = styled.div`
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
+    margin-bottom: 44px;
   }
 `;
 
@@ -70,6 +78,7 @@ export const SubscribeInputField = styled.div`
   display: flex;
   height: 48px;
   justify-content: space-between;
+
   button {
     background: white;
     border-radius: 11px;
@@ -91,25 +100,31 @@ export const SubscribeInputField = styled.div`
 
 export const FooterBottom = styled.div`
   background: var(--secondary-dark-blue);
-  height: 96px;
+  /* height: 96px; */
   div[data-name="footer-bottom-conatainer"] {
     display: flex;
-    max-width: 1170px;
+    max-width: 1147px;
     margin: 0 auto 0 auto;
     align-items: center;
     height: 100%;
     justify-content: space-between;
+    padding: 23px;
+    flex-direction: column;
+    gap: 30px;
 
     div {
-        flex: 1;
+      flex: 1;
       display: flex;
-      max-width: 168px !important;
       min-width: 168px !important;
-      justify-content: space-between;
+      gap: 9px;
+      justify-content: center;
+      img {
+        width: 25px;
+      }
     }
   }
   span {
-      color: white;
-      font-size: 14px;
+    color: white;
+    font-size: 12px;
   }
 `;

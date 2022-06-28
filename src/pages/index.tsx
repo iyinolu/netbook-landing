@@ -12,12 +12,14 @@ const IndexPage = () => {
   return (
     <React.Fragment>
       <GlobalStyles />
-      <HeroSection />
-      <SecondSection />
-      <Achievement />
-      <Community />
-      <StoreDownload />
-      <Footer />
+      <main>
+        <HeroSection />
+        <SecondSection />
+        <Achievement />
+        <Community />
+        <StoreDownload />
+        <Footer />
+      </main>
     </React.Fragment>
   );
 };

@@ -2,15 +2,18 @@ import styled from "styled-components";
 
 export const StoreSection = styled.section`
   background-color: var(--app-download-section-bg);
-  height: 560px;
+  min-height: 560px;
 `;
 
 export const StoreDownloadContainer = styled.div`
   display: flex;
-  max-width: 1170px;
+  max-width: 1147px;
   margin: 0 auto;
   align-items: center;
   height: 100%;
+  padding: 0 23px 0 23px;
+  flex-direction: column;
+  padding-top: 49px;
 `;
 
 export const StoreDownloadLeft = styled.div`
@@ -42,6 +45,7 @@ export const StoreDownloadLeft = styled.div`
   div[data-name="store-icon-container"] {
     display: flex;
     align-items: center;
+    align-self: center;
   }
 `;
 
@@ -51,4 +55,7 @@ export const StoreDownloadRight = styled.div`
   justify-content: center;
   overflow: hidden;
   height: 100%;
+  img {
+    width: 100%;
+  }
 `;

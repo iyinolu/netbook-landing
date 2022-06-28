@@ -10,7 +10,6 @@ export const StoreDownloadContainer = styled.div`
   max-width: 1147px;
   margin: 0 auto;
   align-items: center;
-  height: 100%;
   padding: 0 23px 0 23px;
   flex-direction: column;
   padding-top: 49px;
@@ -54,7 +53,6 @@ export const StoreDownloadRight = styled.div`
   display: flex;
   justify-content: center;
   overflow: hidden;
-  height: 100%;
   img {
     width: 100%;
   }

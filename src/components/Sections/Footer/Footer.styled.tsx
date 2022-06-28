@@ -100,7 +100,6 @@ export const SubscribeInputField = styled.div`
 
 export const FooterBottom = styled.div`
   background: var(--secondary-dark-blue);
-  /* height: 96px; */
   div[data-name="footer-bottom-conatainer"] {
     display: flex;
     max-width: 1147px;
@@ -126,5 +125,11 @@ export const FooterBottom = styled.div`
   span {
     color: white;
     font-size: 12px;
+  }
+
+  @supports not (gap: 30px) {
+    img {
+      margin: 30px 0;
+    }
   }
 `;

@@ -16,7 +16,7 @@ export const CardsDisplayContainer = styled.div`
 
 export const Card = styled.div`
   width: 336px;
-  height: 340px;
+  min-height: 340px;
   display: flex;
   align-items: center;
   justify-content: center;

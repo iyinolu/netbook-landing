@@ -63,7 +63,7 @@ export const CommunityCard = styled.div`
   justify-content: start;
   max-width: 522px !important;
   flex-direction: row !important;
-  height: 182px;
+  min-height: 182px;
   align-items: center;
   background: white;
   border-radius: 14px;

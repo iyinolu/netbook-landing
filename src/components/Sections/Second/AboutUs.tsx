@@ -16,7 +16,7 @@ export const InfoContainer = styled.div`
 `;
 export const WhyNetbookContainer = styled.div`
   flex: 1;
-  height: 406px;
+  min-height: 406px;
   p {
     width: 70%;
     :first-child {

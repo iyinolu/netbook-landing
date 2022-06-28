@@ -1,13 +1,17 @@
 import styled from "styled-components";
 import { ButtonFilled } from "../../Resuables/Button";
 
+
 export const CardsDisplayContainer = styled.div`
-  max-width: 1170px;
+  max-width: 1147px;
   margin: 0 auto 140px auto;
   display: flex;
-  height: 490px;
-  justify-content: space-between;
   align-items: center;
+  padding: 0 23px 0 23px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 19px;
+  margin-top: 80px;
 `;
 
 export const Card = styled.div`
@@ -106,11 +110,12 @@ export const AwardLink = styled.div`
 `;
 
 export const DiscoverContainer = styled.div`
-  width: 381px;
+  max-width: 381px;
   height: 322px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-self: baseline;
 
   span {
     font-size: 18px;
@@ -126,11 +131,11 @@ export const DiscoverContainer = styled.div`
     font-size: 16px;
     color: var(--text-light-gray);
     font-weight: 400;
-    width: 365px;
+    max-width: 365px;
   }
 `;
 
 export const DiscoverButton = styled(ButtonFilled)`
-    width: 192px;
-    height: 58px;
-`
+  width: 192px;
+  height: 58px;
+`;

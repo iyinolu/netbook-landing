@@ -2,14 +2,17 @@ import styled from "styled-components";
 import ListPointer from "../../../images/list-pointer.svg";
 
 export const SecondSectionContainer = styled.section`
-  max-width: 1170px;
+  max-width: 1147px;
   margin: 72px auto 0 auto;
+  padding: 0 23px 0 23px;
 `;
 
 export const InfoContainer = styled.div`
   display: flex;
   align-items: center;
-  height: 576px;
+  min-height: 576px;
+  flex-direction: column;
+  gap: 42px;
 `;
 export const WhyNetbookContainer = styled.div`
   flex: 1;
@@ -17,9 +20,10 @@ export const WhyNetbookContainer = styled.div`
   p {
     width: 70%;
     :first-child {
-      font-size: 18px;
+      font-size: 16px;
       color: var(--primary-blue);
       font-weight: 400;
+      margin-bottom: 21px;
     }
     :nth-child(3) {
       font-size: 16px;
@@ -52,26 +56,33 @@ export const WhyNetbookContainer = styled.div`
   }
 `;
 export const PictureGridContainer = styled.div`
-  position: relative;
+  display: grid;
   flex: 1;
-  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+
   div {
     :first-child {
-      top: 280px;
-      right: 10px;
+      grid-column: 2;
+      grid-row: 2 / 3;
     }
     :nth-child(2) {
-      right: 10px;
+      grid-column: 2;
+      grid-row: 1 / 2;
     }
     :nth-child(3) {
-      top: 72px;
+      display: flex;
+      grid-column: 1;
+      grid-row: 1 / 3;
+      align-items: center;
     }
   }
   img {
     border-radius: 10px;
+    width: 100%;
   }
 `;
 
 export const PictureContainer = styled.div`
-  position: absolute;
+  /* position: absolute; */
 `;

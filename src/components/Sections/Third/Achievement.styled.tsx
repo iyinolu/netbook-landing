@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { ButtonFilled } from "../../Resuables/Button";
-import { breakpoints }  from "../../../utils";
 
 
 export const CardsDisplayContainer = styled.div`

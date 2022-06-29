@@ -41,7 +41,7 @@ export const FooterNavColumns = styled.div`
     justify-content: space-around;
   }
   li {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
     color: var(--text-white);
     cursor: pointer;
@@ -109,16 +109,19 @@ export const FooterBottom = styled.div`
     justify-content: space-between;
     padding: 23px;
     flex-direction: column;
-    gap: 30px;
+
+    img {
+      margin: 30px 0;
+    }
 
     div {
       flex: 1;
       display: flex;
       min-width: 168px !important;
-      gap: 9px;
       justify-content: center;
       img {
         width: 25px;
+        margin: 0 9px;
       }
     }
   }

@@ -12,7 +12,6 @@ export const InfoContainer = styled.div`
   align-items: center;
   min-height: 576px;
   flex-direction: column;
-  gap: 42px;
 `;
 export const WhyNetbookContainer = styled.div`
   flex: 1;
@@ -60,6 +59,7 @@ export const PictureGridContainer = styled.div`
   flex: 1;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+  margin-top: 42px;
 
   div {
     :first-child {

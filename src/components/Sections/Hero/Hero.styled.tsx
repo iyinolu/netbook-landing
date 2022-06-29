@@ -31,7 +31,6 @@ export const Introduction = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: 366px;
   p {
     font-size: 18px;
     color: var(--paragraph-color-1);

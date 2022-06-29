@@ -10,7 +10,8 @@ export const CardsDisplayContainer = styled.div`
   padding: 0 23px 0 23px;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 19px;
+  min-height: 1073px;
+  align-content: space-between;
   margin-top: 80px;
 `;
 

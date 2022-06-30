@@ -73,7 +73,7 @@ const Footer = () => {
       <FooterBottom>
         <div data-name="footer-bottom-conatainer">
           <span>Besnik Creative Agency.</span>
-          <img src={LogoWhite} alt="logo" />
+          <img data-name="footer-logo" src={LogoWhite} alt="logo" />
           <div date-name="social-contacts">
             <img src={Twitter} alt="Twitter" />
             <img src={Instagram} alt="Instagram" />

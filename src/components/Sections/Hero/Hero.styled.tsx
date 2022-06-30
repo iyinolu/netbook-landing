@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { ButtonOutlined, ButtonFilled } from "../../Resuables/Button";
+import { breakpoints } from "../../../breakpoints";
 
 export const HeroPage = styled.section`
   background: linear-gradient(311.76deg, #d4e7fe -15.24%, #ffffff 78.85%);
-  min-height: 100vh;
   width: 100vw;
 `;
 export const Main = styled.div`
@@ -13,7 +13,10 @@ export const Main = styled.div`
   padding: 0 23px 56px 23px;
   flex-direction: column;
   align-items: center;
-  gap: 65px;
+
+  @media ${breakpoints.medium} {
+    flex-direction: row;
+  }
 
   div {
     :first-child {
@@ -43,6 +46,10 @@ export const Introduction = styled.div`
       display: flex;
       justify-content: space-between;
       align-self: center;
+
+      @media ${breakpoints.medium} {
+        align-self: start;
+      }
     }
   }
 `;

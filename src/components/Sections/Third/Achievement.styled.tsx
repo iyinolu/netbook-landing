@@ -1,18 +1,22 @@
 import styled from "styled-components";
+import { breakpoints } from "../../../breakpoints";
 import { ButtonFilled } from "../../Resuables/Button";
 
 
 export const CardsDisplayContainer = styled.div`
   max-width: 1147px;
-  margin: 0 auto 140px auto;
+  margin: 0 auto 81px auto;
   display: flex;
   align-items: center;
   padding: 0 23px 0 23px;
   flex-wrap: wrap;
   justify-content: center;
-  min-height: 1073px;
-  align-content: space-between;
   margin-top: 80px;
+
+  @media ${breakpoints.medium} {
+    /* min-height: 732px; */
+    justify-content: space-around;
+  }
 `;
 
 export const Card = styled.div`
@@ -23,6 +27,7 @@ export const Card = styled.div`
   justify-content: center;
   border: 1px solid rgba(185, 185, 185, 44%);
   border-radius: 14px;
+  margin: 30px 0;
   p {
     font-size: 16px;
     color: var(--text-light-gray);
@@ -117,6 +122,7 @@ export const DiscoverContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-self: baseline;
+  margin: 30px 0;
 
   span {
     font-size: 18px;

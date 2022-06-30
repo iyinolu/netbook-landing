@@ -17,7 +17,7 @@ export const CommunitySection = styled.section`
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 0px 23px 41px 23px;
+      padding: 0px 23px 81px 23px
     }
   }
 `;

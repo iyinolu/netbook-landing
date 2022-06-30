@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../../breakpoints";
 
 export const FooterNavSection = styled.div`
   min-height: 389px;
@@ -15,12 +16,25 @@ export const FooterNavContainer = styled.div`
   flex: 1;
   padding: 0 23px 0 23px;
   flex-direction: column;
+
+  @media ${breakpoints.navMedium} {
+    flex-direction: row;
+  }
 `;
 
 export const FooterNav = styled.nav`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 34px 6px;
+
+  @media ${breakpoints.small} {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media ${breakpoints.navMedium} {
+    grid-template-columns: repeat(4, 1fr);
+    flex: 2;
+  }
 `;
 export const FooterNavColumns = styled.div`
   display: flex;
@@ -55,6 +69,12 @@ export const SubscriptionContainer = styled.div`
   color: var(--text-white);
   justify-content: space-between;
   margin-top: 38px;
+  align-self: start;
+
+  @media ${breakpoints.navMedium} {
+    margin-top: 0;
+    margin-left: 100px;
+  }
 
   h3 {
     margin-bottom: 20px;
@@ -68,6 +88,7 @@ export const SubscriptionContainer = styled.div`
     font-weight: 300;
     line-height: 1.5;
     margin-bottom: 44px;
+    max-width: 400px;
   }
 `;
 
@@ -110,8 +131,18 @@ export const FooterBottom = styled.div`
     padding: 23px;
     flex-direction: column;
 
-    img {
+    @media ${breakpoints.small} {
+      flex-direction: row;
+    }
+
+    img[data-name="footer-logo"] {
       margin: 30px 0;
+      height: 38px;
+      flex: 1;
+      
+      @media ${breakpoints.small} {
+        margin: 0;
+      }
     }
 
     div {
@@ -128,11 +159,11 @@ export const FooterBottom = styled.div`
   span {
     color: white;
     font-size: 12px;
-  }
+    text-align: center;
+    flex: 1;
 
-  @supports not (gap: 30px) {
-    img {
-      margin: 30px 0;
+    @media ${breakpoints.small} {
+      flex: 1;
     }
   }
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../../breakpoints";
 import ListPointer from "../../../images/list-pointer.svg";
 
 export const SecondSectionContainer = styled.section`
@@ -12,6 +13,11 @@ export const InfoContainer = styled.div`
   align-items: center;
   min-height: 576px;
   flex-direction: column;
+
+  @media ${breakpoints.medium} {
+    flex-direction: row;
+  }
+
 `;
 export const WhyNetbookContainer = styled.div`
   flex: 1;

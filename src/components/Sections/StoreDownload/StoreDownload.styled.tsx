@@ -1,8 +1,8 @@
 import styled from "styled-components";
+import { breakpoints } from "../../../breakpoints";
 
 export const StoreSection = styled.section`
   background-color: var(--app-download-section-bg);
-  min-height: 560px;
 `;
 
 export const StoreDownloadContainer = styled.div`
@@ -10,9 +10,12 @@ export const StoreDownloadContainer = styled.div`
   max-width: 1147px;
   margin: 0 auto;
   align-items: center;
-  padding: 0 23px 0 23px;
+  padding: 0 23px;
   flex-direction: column;
-  padding-top: 49px;
+
+  @media ${breakpoints.medium} {
+    flex-direction: row;
+  }
 `;
 
 export const StoreDownloadLeft = styled.div`
@@ -21,6 +24,7 @@ export const StoreDownloadLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 83px 0;
   p[data-name="preamble-text"] {
     color: var(--primary-blue);
     font-size: 18px;
@@ -45,16 +49,28 @@ export const StoreDownloadLeft = styled.div`
     display: flex;
     align-items: center;
     align-self: center;
+
+    @media ${breakpoints.medium} {
+      align-self: start;
+    }
   }
 `;
 
 export const StoreDownloadRight = styled.div`
-  flex: 1;
+  flex: 2;
   display: flex;
   justify-content: center;
   overflow: hidden;
+
   img {
     width: 100%;
     height: 100%;
+  }
+
+  @media ${breakpoints.medium} {
+    align-self: self-end;
+    img {
+      margin-left: -32px;
+    }
   }
 `;

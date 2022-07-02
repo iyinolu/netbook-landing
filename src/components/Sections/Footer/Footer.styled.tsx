@@ -43,7 +43,7 @@ export const FooterNavColumns = styled.div`
   span {
     :first-child {
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 500;
       color: var(--text-white);
       margin-bottom: 11px;
     }
@@ -56,7 +56,7 @@ export const FooterNavColumns = styled.div`
   }
   li {
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 200;
     color: var(--text-white);
     cursor: pointer;
   }

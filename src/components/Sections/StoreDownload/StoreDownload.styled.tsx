@@ -3,6 +3,7 @@ import { breakpoints } from "../../../breakpoints";
 
 export const StoreSection = styled.section`
   background-color: var(--app-download-section-bg);
+  overflow: hidden;
 `;
 
 export const StoreDownloadContainer = styled.div`
@@ -70,7 +71,8 @@ export const StoreDownloadRight = styled.div`
   @media ${breakpoints.medium} {
     align-self: self-end;
     img {
-      margin-left: -32px;
+      /* margin-left: -32px; */
+      margin-right: -176px;
     }
   }
 `;

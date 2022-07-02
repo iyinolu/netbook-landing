@@ -44,4 +44,34 @@ export const GlobalStyles = createGlobalStyle`
     section {
         position: relative;
     }
+
+    .drop-fade-in-animation {
+        animation: dropfadein 1s ease;
+    }
+
+    .slide-right-in-animation {
+        animation: slideright 1s ease;
+    }
+
+    @keyframes dropfadein {
+        from {
+            opacity: 0;
+            transform: translate(0px, 90px);
+        }
+        to {
+            opacity: 1;
+            transform: translate(0px, 0px);
+        }   
+    }
+
+    @keyframes slideright {
+        from {
+            opacity: 0;
+            transform: translate(-90px, 0px);
+        }
+        to {
+            opacity: 1;
+            transform: translate(0px, 0px);
+        }   
+    }
 `

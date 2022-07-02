@@ -26,6 +26,15 @@ export const Main = styled.div`
       flex: 1;
       img {
         width: 94%;
+        animation: heroanimation 2s ease;
+      }
+      @keyframes heroanimation {
+        from {
+          transform: translate(0px, -20px);
+        }
+        to {
+          transform: translate(0px, 0px);
+        }
       }
     }
   }

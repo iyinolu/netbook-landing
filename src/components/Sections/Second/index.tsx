@@ -14,7 +14,7 @@ const SecondSection = () => {
   return (
     <SecondSectionContainer>
       <InfoContainer>
-        <WhyNetbookContainer>
+        <WhyNetbookContainer data-animate-category="slideRight">
           <p>Whats Netboks?</p>
           <h2>Why Join to Netbook Social Network?</h2>
           <p>
@@ -27,7 +27,7 @@ const SecondSection = () => {
             <li>Share</li>
           </ul>
         </WhyNetbookContainer>
-        <PictureGridContainer>
+        <PictureGridContainer data-animate-category="slideup">
           <PictureContainer>
             <img src={InfoImage1}></img>
           </PictureContainer>

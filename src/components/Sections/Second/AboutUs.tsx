@@ -91,4 +91,5 @@ export const PictureGridContainer = styled.div`
 
 export const PictureContainer = styled.div`
   /* position: absolute; */
+  transform: translate(0px, 30px);
 `;

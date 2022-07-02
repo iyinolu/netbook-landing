@@ -16,7 +16,7 @@ const HeroSection = () => (
     <Navigation />
     <Main>
       <div>
-        <Introduction>
+        <Introduction data-animate-category="slideRight">
           <CommunityBadge>Netbook Community</CommunityBadge>
           <MainText>Your Solutions For Community!</MainText>
           <p>
@@ -29,7 +29,7 @@ const HeroSection = () => (
           </div>
         </Introduction>
       </div>
-      <div>
+      <div data-animate-category="slideup">
         <img src={HeroIllustration} alt="hero-illustration" />
       </div>
     </Main>

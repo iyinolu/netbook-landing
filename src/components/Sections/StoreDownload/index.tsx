@@ -13,7 +13,7 @@ const StoreDownload = () => {
   return (
     <StoreSection>
       <StoreDownloadContainer>
-        <StoreDownloadLeft>
+        <StoreDownloadLeft data-animate-category='slideRight'>
           <p data-name="preamble-text">Get Our Aplication</p>
           <h3>You Can Easily Find This App!</h3>
           <p data-name="section-paragraph">
@@ -25,7 +25,7 @@ const StoreDownload = () => {
             <img src={AppStore} alt="app-store-icon" />
           </div>
         </StoreDownloadLeft>
-        <StoreDownloadRight>
+        <StoreDownloadRight data-animate-category='slideup'>
           <img src={MobileMockUp} />
         </StoreDownloadRight>
       </StoreDownloadContainer>

@@ -1,6 +1,6 @@
 import { ANIMATE_CATEGORIES } from "./constants";
 
-const callback: IntersectionObserverCallback = (entries, observer) => {
+export const callback: IntersectionObserverCallback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       switch (entry.target.getAttribute("data-animate-category")) {
@@ -29,5 +29,3 @@ const callback: IntersectionObserverCallback = (entries, observer) => {
     }
   });
 };
-
-export const observer = new IntersectionObserver(callback, { threshold: 0 });

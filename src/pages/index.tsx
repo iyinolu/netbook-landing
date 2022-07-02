@@ -7,19 +7,23 @@ import Achievement from "../components/Sections/Third";
 import Footer from "../components/Sections/Footer";
 import Community from "../components/Sections/Community";
 import StoreDownload from "../components/Sections/StoreDownload";
-import { observer } from "../utils/intersectionObserver"; 
+import { observer } from "../utils/intersectionObserver";
 import { ANIMATE_CATEGORIES } from "../utils/constants";
 
 const IndexPage = () => {
   React.useEffect(() => {
-    Object.keys(ANIMATE_CATEGORIES).forEach(value => {
-      const targetList = document.querySelectorAll(`[data-animate-category='${value}']`)
-      targetList.forEach(target => {
-        observer.observe(target)
-      })
-    })
-  })
-  
+    Object.keys(ANIMATE_CATEGORIES).forEach((value) => {
+      if (document !== undefined) {
+        const targetList = document.querySelectorAll(
+          `[data-animate-category='${value}']`
+        );
+        targetList.forEach((target) => {
+          observer.observe(target);
+        });
+      }
+    });
+  });
+
   return (
     <React.Fragment>
       <GlobalStyles />
